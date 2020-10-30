@@ -821,11 +821,11 @@ arg = 2;
             location, [min_sv max_sv], [], daynight)
 
         echogram(pg, 1.1, strcat(ttlenew,<span class="string">' kHz:'</span>,<span class="string">' percentage of {\itS_v} retained (%)'</span>), location, [0 100], jet(256),<span class="string">''</span>);
-</pre><img vspace="5" hspace="5" src="viz_sv_01.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_02.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_03.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_05.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_06.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_07.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_09.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_10.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_11.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_13.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_14.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_15.png" alt=""> <h2 id="13">Plot signal-to-noise ratio</h2><pre class="codeinput"><span class="comment">% TER 14/11/16</span>
+</pre><img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_01.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_02.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_03.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_05.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_06.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_07.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_09.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_10.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_11.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_13.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_14.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_15.png" alt=""> <h2 id="13">Plot signal-to-noise ratio</h2><pre class="codeinput"><span class="comment">% TER 14/11/16</span>
         <span class="keyword">if</span> exist(<span class="string">'snr'</span>,<span class="string">'var'</span>)
             echogram(snr, 0.1, strcat(ttlenew,<span class="string">' kHz:'</span>,<span class="string">' signal-to-noise-ratio (dB re 1)'</span>),location,[0 40], jet(256),<span class="string">''</span>); <span class="comment">% signal to noise ratio</span>
         <span class="keyword">end</span>
-</pre><img vspace="5" hspace="5" src="viz_sv_04.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_08.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_12.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_16.png" alt=""> <h2 id="14">Plot motion correction factor</h2><pre class="codeinput"><span class="comment">% Haris 14/06/2019 - uncomment if needed</span>
+</pre><img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_04.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_08.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_12.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_16.png" alt=""> <h2 id="14">Plot motion correction factor</h2><pre class="codeinput"><span class="comment">% Haris 14/06/2019 - uncomment if needed</span>
 <span class="comment">%         if exist('mot')</span>
 <span class="comment">%             echogram(mot,0.1,strcat(ttlenew,' kHz:',' motion correction factor (%)'),location,[0 20],jet(256),''); % motion correction factor</span>
 <span class="comment">%         end</span>
@@ -917,7 +917,7 @@ arg = 2;
                 xlim([1 length(data.NASC(:,:,chann_n))])
             <span class="keyword">end</span>
         <span class="keyword">end</span>
-</pre><img vspace="5" hspace="5" src="viz_sv_17.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_18.png" alt=""> <h2 id="18">Plot background noise per interval</h2><pre class="codeinput"><span class="comment">% TER 14/11/16. Modified by Haris on 05 February 2019 to plot as a single figure for all channels</span>
+</pre><img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_17.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_18.png" alt=""> <h2 id="18">Plot background noise per interval</h2><pre class="codeinput"><span class="comment">% TER 14/11/16. Modified by Haris on 05 February 2019 to plot as a single figure for all channels</span>
 
         <span class="keyword">if</span> isfield(data, <span class="string">'background_noise'</span>)
             figure;
@@ -932,7 +932,7 @@ arg = 2;
             legend(data.channels,<span class="string">'Orientation'</span>,<span class="string">'horizontal'</span>,<span class="string">'Location'</span>,<span class="string">'best'</span>)
             grid <span class="string">on</span>
         <span class="keyword">end</span>
-</pre><img vspace="5" hspace="5" src="viz_sv_19.png" alt=""> <h2 id="19">Plot motion correction factor, box plot or line plot</h2><pre class="codeinput"><span class="comment">% Haris 15/06/2019</span>
+</pre><img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_19.png" alt=""> <h2 id="19">Plot motion correction factor, box plot or line plot</h2><pre class="codeinput"><span class="comment">% Haris 15/06/2019</span>
 
         <span class="keyword">if</span> exist(<span class="string">'mot'</span>)
 
@@ -1000,7 +1000,7 @@ arg = 2;
                 <span class="keyword">end</span>
             <span class="keyword">end</span>
         <span class="keyword">end</span>
-</pre><img vspace="5" hspace="5" src="viz_sv_20.png" alt=""> <h2 id="20">Plot summary layer metrics</h2><pre class="codeinput"><span class="comment">% Haris modified- 22 December 2018. Now plotting with time and modified</span>
+</pre><img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_20.png" alt=""> <h2 id="20">Plot summary layer metrics</h2><pre class="codeinput"><span class="comment">% Haris modified- 22 December 2018. Now plotting with time and modified</span>
 <span class="comment">% condition. Updated on 30 April 2019.</span>
 
         <span class="keyword">if</span> isfield(data, <span class="string">'lower_mesopelagic'</span>) &amp;&amp; isfield(data, <span class="string">'day'</span>)
@@ -1085,7 +1085,7 @@ arg = 2;
             title(<span class="string">'Lower mesopelagic layer (400-800 m)'</span>)
             grid <span class="string">on</span>; box <span class="string">on</span>
         <span class="keyword">end</span>
-</pre><img vspace="5" hspace="5" src="viz_sv_21.png" alt=""> <img vspace="5" hspace="5" src="viz_sv_22.png" alt=""> <h2 id="21">Plot voyage track</h2><pre class="codeinput"><span class="comment">% Haris - 20 June 2018. Plot voyage track on globe without using mapping toolbox</span>
+</pre><img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_21.png" alt=""> <img vspace="5" hspace="5" src="./viz_sv_figures/viz_sv_22.png" alt=""> <h2 id="21">Plot voyage track</h2><pre class="codeinput"><span class="comment">% Haris - 20 June 2018. Plot voyage track on globe without using mapping toolbox</span>
 <span class="comment">% based on: https://au.mathworks.com/matlabcentral/answers/350195-how-can-you-plot-lines-of-latitude-and-longitude-on-a-globe-without-using-the-mapping-toolbox</span>
 
         figure <span class="comment">% Plot voyage track on globe</span>
