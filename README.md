@@ -1,4 +1,4 @@
-# Visualize-IMOS-Bioacoustics-data (viz_sv)
+# Visualize IMOS Bioacoustics data (viz_sv)
  viz_sv is a 'Matlab' based function to read and visualise IMOS Bioacoustics NetCDF file.
 
 For more information about this function see: https://csiro-acoustics.github.io/Visualize-IMOS-Bioacoustics-data/
