@@ -131,9 +131,9 @@ For more information about IMOS Bioacoustics sub-Facility: http://imos.org.au/fa
      location  - cell array of two strings to label start and end of plot
  
 ## Author and version   
-               Tim Ryan <tim.ryan@csiro.au>
-               Gordon Keith <gordon.keith@csiro.au>
-               Contributor:  
-               Haris Kunnath <haris.kunnath@csiro.au>
-               Version: 2.7
-               Date: 2020-10-02
+     Tim Ryan <tim.ryan@csiro.au>
+     Gordon Keith <gordon.keith@csiro.au>
+     Contributor:  
+     Haris Kunnath <haris.kunnath@csiro.au>
+     Version: 2.7
+     Date: 2020-10-02
