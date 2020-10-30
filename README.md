@@ -4,30 +4,30 @@
 For more information about IMOS Bioacoustics sub-Facility: http://imos.org.au/facilities/shipsofopportunity/bioacoustic/
 
 ## Syntax for usage
-   viz_sv
-   viz_sv(ncfile)
-   viz_sv(ncfile, imagefile)
-   viz_sv(ncfile, imagefile, 'channel', channel)
-   viz_sv(ncfile, imagefile, 'all')
-   viz_sv(ncfile, imagefile, 'depth', [min max])
-   viz_sv(ncfile, imagefile, 'noplots')
-   viz_sv(ncfile, imagefile, 'sun')
-   viz_sv(data_struct,data_array)
-   viz_sv(...,'title',title)
-   viz_sv(...,'location',{start end})
-   viz_sv(...,'channel', channel)
-   viz_sv(...,'range',[min max])
-   viz_sv(...,'depth',[min max])
-   viz_sv(...,'cmap',cmap)
-   viz_sv(...,'image',imagefile)
-   viz_sv(...,'axis',ticktype)
-   viz_sv(...,'ypos',ypos)
-   viz_sv(...,'noplots')
-   viz_sv(...,'sun')
-   viz_sv(...,'csv',filename)
-   viz_sv(...,'inf')
-   viz_sv(...,'sv.csv')
-   viz_sv(data_struct,data_array, title)
+    viz_sv
+    viz_sv(ncfile)
+    viz_sv(ncfile, imagefile)
+    viz_sv(ncfile, imagefile, 'channel', channel)
+    viz_sv(ncfile, imagefile, 'all')
+    viz_sv(ncfile, imagefile, 'depth', [min max])
+    viz_sv(ncfile, imagefile, 'noplots')
+    viz_sv(ncfile, imagefile, 'sun')
+    viz_sv(data_struct,data_array)
+    viz_sv(...,'title',title)
+    viz_sv(...,'location',{start end})
+    viz_sv(...,'channel', channel)
+    viz_sv(...,'range',[min max])
+    viz_sv(...,'depth',[min max])
+    viz_sv(...,'cmap',cmap)
+    viz_sv(...,'image',imagefile)
+    viz_sv(...,'axis',ticktype)
+    viz_sv(...,'ypos',ypos)
+    viz_sv(...,'noplots')
+    viz_sv(...,'sun')
+    viz_sv(...,'csv',filename)
+    viz_sv(...,'inf')
+    viz_sv(...,'sv.csv')
+    viz_sv(data_struct,data_array, title)
 
 ## Description
  The viz_sv function reads data from an IMOS_SOOP-BA*.nc file and plots
@@ -45,17 +45,18 @@ For more information about IMOS Bioacoustics sub-Facility: http://imos.org.au/fa
 
  If imagefile is specified and image of the plot will be written to file
  depending on the imagefile argument:
-   [] - no file is written
-   '' - empty string - the plot will be written to a file with the same
-        name and directory as ncfile with a '.png' extension added.
-   dir - if imagefile is a valid directory the image will be written to
-        that directory with the same file name as ncfile with a '.png' 
-        extension added.  
-   '-dformat' - an image of the specified format will be written to a file
-        with the same name as ncfile with a .format extension. See print 
-        for a list of supported formats.
-   filename - anything else is treated as the name of the file to write
-        the image to.
+ 
+    [] - no file is written
+    '' - empty string - the plot will be written to a file with the same
+         name and directory as ncfile with a '.png' extension added.
+    dir - if imagefile is a valid directory the image will be written to
+         that directory with the same file name as ncfile with a '.png' 
+         extension added.  
+    '-dformat' - an image of the specified format will be written to a file
+         with the same name as ncfile with a .format extension. See print 
+         for a list of supported formats.
+    filename - anything else is treated as the name of the file to write
+         the image to.
 
  If the 'all' option is specified the data structure returned will contain
  all numeric (float or double) fields of the netCDF file.
@@ -123,10 +124,11 @@ For more information about IMOS Bioacoustics sub-Facility: http://imos.org.au/fa
  dimensional array length(depth) x length(time) [x length(channels)].
 
  Other fields which may be used if present in data_struct are:
-    longitude - vector with same size as time
-    latitude  - vector with same size as time
-    file      - string (usually containing filename) used in title
-    location  - cell array of two strings to label start and end of plot
+ 
+     longitude - vector with same size as time
+     latitude  - vector with same size as time
+     file      - string (usually containing filename) used in title
+     location  - cell array of two strings to label start and end of plot
  
 ## Author and version   
                Tim Ryan <tim.ryan@csiro.au>
